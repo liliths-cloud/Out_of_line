@@ -41,6 +41,10 @@ model-viewer{
 
 .ar-button{
 
+    
+    min-height:60px;
+    touch-action:manipulation;
+
     position:absolute;
 
     left:50%;
@@ -48,28 +52,33 @@ model-viewer{
 
     transform:translateX(-50%);
 
+    display:flex;
+    align-items:center;
+    gap:12px;
+
     background:white;
 
-    color:#005eff;
+    color:#0089B6;
 
     border:none;
 
     padding:20px 42px;
 
-    font-size:24px;
+    font-size:22px;
 
     font-weight:bold;
 
     border-radius:60px;
 
     box-shadow:
-        0 10px 25px rgba(0,0,0,.18);
+        0 10px 30px rgba(0,0,0,.12);
 
     transition:.25s;
 
     cursor:pointer;
 
 }
+
 
 .ar-button:hover{
 
@@ -91,7 +100,7 @@ model-viewer{
 
     width:100%;
 
-    top:30px;
+    top:70px;
 
     text-align:center;
 
@@ -99,7 +108,7 @@ model-viewer{
 
     font-weight:700;
 
-    color:#222;
+    color:#0089B6;
 
     pointer-events:none;
 
@@ -111,7 +120,7 @@ model-viewer{
 
     width:100%;
 
-    top:72px;
+    top:115px;
 
     text-align:center;
 
@@ -134,7 +143,7 @@ Out of Line
 </div>
 
 <div class="subtitle">
-Scanne den QR-Code und platziere das Objekt in deinem Raum.
+Tippe auf "In AR ansehen", um das Objekt in deiner Umgebung zu platzieren
 </div>
 
 <model-viewer
