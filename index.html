@@ -49,16 +49,19 @@ model-viewer{
 
     left:50%;
     bottom:35px;
+    
+    display:flex;
+    justify-content:center;   /* horizontal zentrieren */
+    align-items:center;       /* vertikal zentrieren */
+    gap:12px;
+
+    white-space: nowrap; 
 
     transform:translateX(-50%);
 
-    display:flex;
-    align-items:center;
-    gap:12px;
-
     background:white;
 
-    color:#0089B6;
+    color:#3394FF;
 
     border:none;
 
@@ -108,7 +111,7 @@ model-viewer{
 
     font-weight:700;
 
-    color:#0089B6;
+    color:#3394FF;
 
     pointer-events:none;
 
@@ -148,9 +151,9 @@ Tippe auf "In AR ansehen", um das Objekt in deiner Umgebung zu platzieren
 
 <model-viewer
 
-src="VR_V9.glb"
+src="VR_V13.glb"
 
-ios-src="VR_V9.usdz"
+ios-src="VR_V13.usdz"
 
 ar
 
